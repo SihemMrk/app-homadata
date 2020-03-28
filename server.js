@@ -10,12 +10,12 @@ app.set("view engine", "jade");
 
 app.use(express.static(__dirname + "/public"));
 
-app.get("*", function(req, res) {
-  res.render("index");
-});
-
 app.get("/partials/:partialPath", function(req, res) {
   res.render("partials/" + req.params.partialPath);
+});
+
+app.get("*", function(req, res) {
+  res.render("index");
 });
 
 var port = 3030;

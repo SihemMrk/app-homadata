@@ -1,0 +1,38 @@
+div
+    form
+        div 
+            h3 Quel type de bien souhaitez vous estimez ?
+            div
+                label
+                input(type="radio" ng-model= "type.name" value="appartement")
+                p Appartement
+                label
+                input(type="radio" ng-model= "type.name" value="maison")
+                p Maison          
+        div 
+            h3 Quel est la surface de votre bien ?
+            div
+                input(type="number" ng-model="type.surface")             
+        div 
+            h3 Combien y a t-il de pièces ?
+            div
+                input(type="number" ng-model="type.pieces")             
+        div 
+            h3 Quel est le prix au m² ?
+            div
+                input(type="number" ng-model="type.prix")
+        div 
+            h3 Quel est l'état général du bien ?
+            div
+                label
+                input(type="radio" ng-model= "type.etat" value="1")
+                p Refait à neuf
+                label
+                input(type="radio" ng-model= "type.etat" value="2")
+                p Bon état  
+                label
+                input(type="radio" ng-model= "type.etat" value="3")
+                p Nécessite des travaux 
+
+   a(href="/estimation")
+  button estimer
