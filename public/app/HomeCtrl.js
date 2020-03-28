@@ -1,8 +1,8 @@
 (function() {
-  var app = angular.module("app");
+  var serviceApp = angular.module("serviceApp");
   var HomeCtrl = function($scope) {
     $scope.myVar = "Estimez votre bien";
   };
 
-  app.controller("HomeCtrl", HomeCtrl);
+  serviceApp.controller("HomeCtrl", HomeCtrl);
 })();

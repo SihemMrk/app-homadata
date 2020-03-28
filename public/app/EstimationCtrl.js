@@ -1,10 +1,10 @@
 (function() {
-  var app = angular.module("app");
+  var serviceApp = angular.module("serviceApp", ["services"]);
   var EstimationCtrl = function($scope, EstimationData) {
     $scope.estimation = "estimation";
     console.log(EstimationData.hello);
   };
-  app.controller("EstimationCtrl", [
+  serviceApp.controller("EstimationCtrl", [
     "$scope",
     "EstimationData",
     EstimationCtrl
