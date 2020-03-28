@@ -1,8 +1,12 @@
 (function() {
   var app = angular.module("app");
-  var EstimationCtrl = function($scope) {
+  var EstimationCtrl = function($scope, EstimationData) {
     $scope.estimation = "estimation";
+    console.log(EstimationData.hello);
   };
-
-  app.controller("EstimationCtrl", EstimationCtrl);
+  app.controller("EstimationCtrl", [
+    "$scope",
+    "EstimationData",
+    EstimationCtrl
+  ]);
 })();
