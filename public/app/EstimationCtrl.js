@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module("app", ["services"]);
+  var app = angular.module("app", ["service"]);
   var EstimationCtrl = function($scope, EstimationData) {
     $scope.estimation = "estimation";
     console.log(EstimationData.hello);

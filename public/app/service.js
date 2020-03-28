@@ -1,5 +1,6 @@
-var services = angular.module("services", []);
-services.factory("EstimationData", function() {
+var app = angular.module("app");
+
+app.service("EstimationData", function() {
   var estimationData = {
     hello: "world"
   };
