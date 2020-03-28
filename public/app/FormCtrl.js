@@ -1,5 +1,5 @@
 (function() {
-  var serviceApp = angular.module("serviceApp");
+  var app = angular.module("app");
   var FormCtrl = function($scope) {
     $scope.type = {
       name: "",
@@ -10,5 +10,5 @@
     };
   };
 
-  serviceApp.controller("FormCtrl", FormCtrl);
+  app.controller("FormCtrl", FormCtrl);
 })();
