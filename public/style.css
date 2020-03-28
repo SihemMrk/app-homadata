@@ -24,7 +24,7 @@
 #buttonDiv {
   padding-bottom: 50px;
 }
-#estimer {
+#buttonDiv button {
   padding: 15px 40px;
   color: white;
   background-color: #33d694;
@@ -32,39 +32,95 @@
   border-radius: 5px;
 }
 
-#form {
+#estimer {
+  text-align: center;
+  margin-top: 20px;
+}
+#estimer button {
+  padding: 10px 30px;
+  color: white;
+  background-color: #33d694;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#form,
+#estimationPage {
   height: 650px;
   background-color: #303248;
   padding-top: 50px;
 }
 
-#form div {
-  margin-top: 20px;
-}
-
-form {
+form,
+#estimation {
+  color: #303248dc;
   margin: 0px auto;
   padding: 10px 30px 60px 30px;
-  border: 6px solid #33d694;
-  border-radius: 5px;
+  border-radius: 9px;
   height: 500px;
   width: 400px;
   background-color: white;
 }
-
-p {
-  font-size: 20px;
+.question {
+  margin-top: 25px;
+}
+.question p {
+  font-size: 17px;
   text-align: center;
 }
-
-#typeRadio {
+div.input {
+  text-align: center;
+  margin-top: 8px;
+}
+.typeRadio {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 8px;
+}
+.typeRadio label {
+  display: block;
+  text-align: center;
+}
+/* input {
+  align-items: center;
+} */
+input[type="number"] {
+  color: #30324849;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid #33d694;
+  font-size: 15px;
+}
+#estimation h2 {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+.recapValue {
+  font-size: 20px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.data {
+  font-size: 30px;
+  color: #30324849;
+}
+#total {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-input[type="number"] {
-  border-radius: 5px;
-  padding: 5px 20px;
-  border: 2px solid #33d694;
+#total h3 {
+  font-size: 25px;
+}
+
+#total p {
+  font-size: 35px;
+  font-weight: bold;
 }
