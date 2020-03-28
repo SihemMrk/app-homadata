@@ -31,3 +31,40 @@
   font-size: 20px;
   border-radius: 5px;
 }
+
+#form {
+  height: 650px;
+  background-color: #303248;
+  padding-top: 50px;
+}
+
+#form div {
+  margin-top: 20px;
+}
+
+form {
+  margin: 0px auto;
+  padding: 10px 30px 60px 30px;
+  border: 6px solid #33d694;
+  border-radius: 5px;
+  height: 500px;
+  width: 400px;
+  background-color: white;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+#typeRadio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input[type="number"] {
+  border-radius: 5px;
+  padding: 5px 20px;
+  border: 2px solid #33d694;
+}
