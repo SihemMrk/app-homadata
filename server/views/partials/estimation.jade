@@ -17,11 +17,12 @@ div#estimationPage
             p.data {{data.etat}}
         div.recapValue
             p Coûte
-            p.data {{data.prix}}
+            p.data {{data.prix}}€
             p /m²
       div#total
         h3 Estimer à : 
-        p {{estimation}}€
+        p {{estimation.toFixed(2)}}€
+      
       div#estimer
             a(href="/form")
                 button#estimer Nouvelle Estimation

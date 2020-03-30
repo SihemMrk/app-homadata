@@ -36,7 +36,8 @@
   text-align: center;
   margin-top: 20px;
 }
-#estimer button {
+#estimer button,
+#estimer input {
   padding: 10px 30px;
   color: white;
   background-color: #33d694;
@@ -105,7 +106,6 @@ input[type="number"] {
   padding-right: 50px;
 }
 .data {
-  font-size: 30px;
   color: #30324849;
 }
 #total {
@@ -116,10 +116,7 @@ input[type="number"] {
   padding-right: 10px;
 }
 
-#total h3 {
-  font-size: 25px;
-}
-
+#total h3,
 #total p {
   font-size: 35px;
   font-weight: bold;

@@ -20,7 +20,6 @@ app.get("*", function(req, res) {
 });
 
 app.post("/data", function(req, res) {
-  console.log(req.body);
   const datas = req.body;
   const surface = parseFloat(datas.surface);
   const pieces = parseFloat(datas.pieces);
@@ -50,7 +49,6 @@ app.post("/data", function(req, res) {
     totalPrice = totalPrice * 1.12;
   }
 
-  console.log(totalPrice);
   res.json(totalPrice);
 });
 var port = 3030;

@@ -7,8 +7,6 @@
     EstimationData.estimation().then(function(response) {
       $scope.estimation = response.data;
     });
-    // console.log(EstimationData.hello);
-    // console.log(EstimationData.doSomething());
   };
   app.controller("EstimationCtrl", [
     "$scope",

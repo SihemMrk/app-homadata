@@ -34,5 +34,5 @@ div#form
                 input(type="radio" ng-model= "type.etat" value="Nécessite des travaux")
                 p Nécessite des travaux 
         div#estimer
-            a(href="/estimation")
-                button#estimer Estimer
+            input(type="submit" ng-click="submit()" value='Estimer maintenant')
+       
